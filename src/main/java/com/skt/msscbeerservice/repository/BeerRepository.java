@@ -6,5 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
-public interface BeerRepository extends PagingAndSortingRepository<Beer, UUID> {
+public interface
+
+BeerRepository extends PagingAndSortingRepository<Beer, UUID> {
 }
