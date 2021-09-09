@@ -1,6 +1,7 @@
 package com.skt.msscbeerservice.web.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.skt.msscbeerservice.bootstrap.BeerLoader;
 import com.skt.msscbeerservice.services.BeerService;
 import com.skt.msscbeerservice.web.model.BeerDto;
 import com.skt.msscbeerservice.web.model.BeerStyleEnum;
@@ -67,7 +68,7 @@ class BeerControllerTest {
                 .beerName("My Beer")
                 .beerStyle(BeerStyleEnum.ALE)
                 .price(new BigDecimal("2.99"))
-                .upc(123123123123L)
+                .upc(BeerLoader.BEER_1_UPC)
                 .build();
     }
 
@@ -76,7 +77,7 @@ class BeerControllerTest {
                 .beerName("My Beer")
                 .beerStyle(BeerStyleEnum.ALE)
                 .price(new BigDecimal("2.99"))
-                .upc(123123123123L)
+                .upc(BeerLoader.BEER_2_UPC)
                 .build();
     }
 }
